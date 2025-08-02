@@ -1,0 +1,25 @@
+services:
+  service-a:
+    image: service-a:latest
+    build:
+      context: service-a
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    container_name: service-a
+  service-b:
+    image: service-b:latest
+    build:
+      context: service-b
+      dockerfile: Dockerfile
+    ports:
+      - "5174:80"
+    container_name: service-b
+  service-ab:
+    image: service-ab:latest
+    build:
+      context: service-ab
+      dockerfile: Dockerfile
+    ports:
+      - "5175:80"
+    container_name: service-ab
