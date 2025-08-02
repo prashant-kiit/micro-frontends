@@ -37,6 +37,12 @@
   padding: 2em;
 }
 
+.button {
+  background-color: #aa1b1b;
+  color: #fff;
+  padding: 10px;
+}
+
 .read-the-docs {
   color: #888;
 }
